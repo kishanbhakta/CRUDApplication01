@@ -20,7 +20,7 @@
       $routeProvider.when('/', {
 
       controller: '',
-      templateUrl:''
+      templateUrl:'js/cigar/home.tpl.html'
 
     })
 
@@ -29,14 +29,14 @@
       controller:'',
       templateUrl: 'js/cigar/addpost.tpl.html'
 
-    })
-
-    .when('/', {
-
-      controller:'',
-      templateUrl: ''
-
     });
+
+    // .when('/', {
+
+    //   controller:'',
+    //   templateUrl: ''
+
+    // });
 
     }
   ]);
