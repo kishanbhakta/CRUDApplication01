@@ -15,7 +15,7 @@
   })
 
   .config( ['$routeProvider',
-    function(){
+    function($routeProvider){
 
       $routeProvider.when('/', {
 
@@ -24,10 +24,10 @@
 
     })
 
-    .when('/', {
+    .when('/add-post', {
 
       controller:'',
-      templateUrl: ''
+      templateUrl: 'js/cigar/addpost.tpl.html'
 
     })
 

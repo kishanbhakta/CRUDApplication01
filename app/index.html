@@ -9,18 +9,26 @@
 </head>
 <body ng-app="Cigars">
 
- <nav class="icon-bar five-up">
+ <nav>
    <a href="#/">Home</a>
    <a href="#/add">Add Post</a>
    <a href="#/signup">Sign Up</a>
+   <span class="row-3">
+     <div id="loginContainer" class="large-2 columns">
+       <input type="text" placeholder="User Name" >
+       <input type="text" placeholder="Password" >
+       <button>Login</button>
+     </div>
+   </span>
+
  </nav>
 
- <div>
+ <!-- <div>
    <h2> Login </h2>
    <input type="text" placeholder="User Name">
    <input type="text" placeholder="Password">
    <button>Login</button>
- </div>
+ </div> -->
 
   <div class="container" ng-view></div>
   <!-- VENDOR -->
