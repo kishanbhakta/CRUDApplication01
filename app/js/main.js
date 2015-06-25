@@ -19,15 +19,22 @@
 
       $routeProvider.when('/', {
 
-      controller: 'CigarPost',
-      templateUrl:'js/cigar/home.tpl.html'
+      controller: '',
+      templateUrl:''
 
     })
 
-    .when('/add', {
+    .when('/', {
 
-      controller:'Cigar',
-      templateUrl: 'js/cigar/addpost.tpl.html'
+      controller:'',
+      templateUrl: ''
+
+    })
+
+    .when('/', {
+
+      controller:'',
+      templateUrl: ''
 
     });
 
