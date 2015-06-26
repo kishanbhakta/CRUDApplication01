@@ -16,19 +16,20 @@
   })
 
   .config( ['$routeProvider',
+
     function($routeProvider) {
 
       $routeProvider
 
       .when('/', {
-        controller: 'CigarPostHome',
-        templateUrl: 'js/cigar/home.tpl.html'
+        controller: 'AddPostCtrl',
+        templateUrl: 'js/posts/home.tpl.html'
 
       })
 
       .when('/add-post', {
         controller: 'AddPostCtrl',
-        templateUrl: 'js/cigar/addpost.tpl.html'
+        templateUrl: 'js/posts/addpost.tpl.html'
 
       });
 
