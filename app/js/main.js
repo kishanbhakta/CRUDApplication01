@@ -2,7 +2,7 @@
 
   'use strict';
 
-  angular.module('Cigars', ['ngRoute'])
+  angular.module('Cigars', ['ngRoute', 'ngCookies'])
 
   .constant('PARSE', {
     URL: 'https://api.parse.com/1/',
@@ -41,37 +41,5 @@
     }
 
   ]);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }());
