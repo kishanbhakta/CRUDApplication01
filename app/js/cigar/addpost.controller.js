@@ -8,10 +8,9 @@
 
    function($scope, $http, PARSE){
 
-    var endpoint = PARSE.URL + "classes/cigarpost/";
+    var endpoint = PARSE.URL + "classes/cigarpost";
 
-    //Add Post Constructor
-
+     //Add Post
     $scope.userPost = function (post) {
       $http.post(endpoint, {
 
@@ -19,7 +18,7 @@
         article   : post.article,
         img       : post.img
 
-      }, PARSE.CONFIG);
+      }, PARSE.CONFIG).success(function(data) { this.data = data});
     }
 
     //http request\
