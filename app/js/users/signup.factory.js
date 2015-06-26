@@ -15,11 +15,18 @@
         $location.path('/');
          console.log(users);
       });
-    };
+    }
 
+    var loginInfo = function (userInfo) {
+      return $http.get(endpoint, userInfo, PARSE.CONFIG). success( function() {
+        console.log(userInfo);
+        $location.path('/');
+      });
+    };
 
     return {
       addUsernames   :   addUsernames
+      loginInfo      :   loginInfo
     }
 
 
