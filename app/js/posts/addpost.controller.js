@@ -9,27 +9,16 @@
    function($scope, $http, PostFactory, $routeParams){
 
    // Call Method to Get All Post
-      PostFactory.getPosts().success( function(data) {
-        $scope.posts = data.results;
+      PostFactory.getPost().success( function (data) {
+        $scope.cigar = data.results;
       });
 
        $scope.addPost = function (post) {
         PostFactory.addPost(post);
-       }
+       };
 
-      //  $scope.addPost = function (cigar) {
-      //   PostFactory.addPost(cigar);
-      //  },
 
-      //  $scope.addPost = function (cigar) {
-      //   PostFactory.addPost(cigar);
-      //  },
 
-      // $scope.deleteMe = function (whichOne) {
-      //   PostFactory.deletePost(whichOne).success( function () {
-      //     $scope.addPost = _.without($scope.addPost, whichOne);
-      //   });
-      // };
 
 
 

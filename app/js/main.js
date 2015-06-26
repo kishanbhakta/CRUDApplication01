@@ -31,8 +31,13 @@
         controller: 'AddPostCtrl',
         templateUrl: 'js/posts/addpost.tpl.html'
 
-      });
+      })
 
+      .when('/sign-up', {
+        controller: 'UserCtrl',
+        templateUrl: 'js/users/signup.tpl.html'
+
+     });
     }
 
   ]);

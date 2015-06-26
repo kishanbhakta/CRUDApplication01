@@ -16,26 +16,22 @@
         });
       };
 
-      // Get a single object
+      // Get a single posts
       var getSinglePost = function (id) {
         return $http.get(endpoint + id, PARSE.CONFIG);
       };
 
-      // Get an array of all vehicles
-      var getPosts = function () {
-        $http.get(endpoint, PARSE.CONFIG);
+      // Get an array of all posts
+      var getPost = function () {
+        return $http.get(endpoint, PARSE.CONFIG);
       };
 
-      // Delete a single vehicle
-      // var deletePost = function (whichOne) {
-      //   var deleteURL = endpoint + whichOne.objectId;
-      //   return $http.delete(deleteURL, PARSE.CONFIG);
-      // };
+
 
       return {
         addPost        : addPost,
         getSinglePost  : getSinglePost,
-        getPosts       : getPosts
+        getPost        : getPost
         // deletePost     : deletePost
       }
 

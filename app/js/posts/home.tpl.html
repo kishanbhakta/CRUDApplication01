@@ -1,6 +1,11 @@
 <h1 class="homeTitle">Let's Talk Cigars</h1>
  <ul>
-   <li ng-repeat="post in posts">
+   <li ng-repeat="post in cigar">
+     <img src="{{post.img}}" alt="">
+     <br>
      {{ post.title }}
+     <hr>
+     {{ post.article}}
+
    </li>
  </ul>
