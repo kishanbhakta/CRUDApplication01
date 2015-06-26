@@ -21,7 +21,7 @@
       $routeProvider
 
       .when('/', {
-        controller: '',
+        controller: 'CigarPostHome',
         templateUrl: 'js/cigar/home.tpl.html'
 
       })

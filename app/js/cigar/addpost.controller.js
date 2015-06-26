@@ -18,12 +18,28 @@
         article   : post.article,
         img       : post.img
 
-      }, PARSE.CONFIG).success(function(data) { this.data = data});
+      }, PARSE.CONFIG);
     }
 
-    //http request\
+      // // Get a single object
+      // this.getPost = function (id) {
+      //   return $http.get(endpoint + id, PARSE.CONFIG);
+      // };
 
-    //on success(function(data) { $scope.data = data})
+      // // Get an array of all vehicles
+      // this.getPosts = function () {
+      //   $http.get(endpoint, PARSE.CONFIG).success( function (data) {
+      //     $rootScope.$broadcast('AnythingCool', data);
+      //   });
+      // };
+
+      // // Delete a single vehicle
+      // this.deletePost = function (whichOne) {
+      //   var deleteURL = endpoint + whichOne.objectId;
+      //   return $http.delete(deleteURL, PARSE.CONFIG);
+      // };
+
+
 
     }
   ])

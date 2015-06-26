@@ -4,9 +4,17 @@
 
   angular.module('Cigars')
 
-  .controller('Cigar', ['$scope', '$http', 'PARSE', '$location',
-   function(){
+  .controller('CigarPostHome', ['$scope', '$http', 'PARSE', //'$location',
+   function($scope, $http, PARSE){
 
+      // // Call Method to Get All Vehicles
+      // VehicleService.getCars();
+
+      // $scope.deleteMe = function (whichOne) {
+      //   VehicleService.deletePost(whichOne).success( function () {
+      //     $scope.vehicleList = _.without($scope.vehicleList, whichOne);
+      //   });
+      // };
 
 
     }
