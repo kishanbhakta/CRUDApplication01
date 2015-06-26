@@ -10,8 +10,8 @@
 <body ng-app="Cigars">
 
  <nav>
-   <a href="#/">Home</a>
-   <a href="#/add">Add Post</a>
+   <a href="#/">Home</a> |
+   <a href="#/add-post">Add Post</a> |
    <a href="#/signup">Sign Up</a>
    <span class="row-3">
      <div id="loginContainer" class="large-2 columns">
@@ -22,13 +22,6 @@
    </span>
 
  </nav>
-
- <!-- <div>
-   <h2> Login </h2>
-   <input type="text" placeholder="User Name">
-   <input type="text" placeholder="Password">
-   <button>Login</button>
- </div> -->
 
   <div class="container" ng-view></div>
   <!-- VENDOR -->
@@ -41,7 +34,9 @@
   <script src="js/main.js"></script>
 
   <script src="js/cigar/cigar.controller.js"></script>
-  <script src="js/cigar/cigarpost.controller.js"></script>cigar
+  <script src="js/cigar/cigarpost.controller.js"></script>
+  <script src="js/cigar/addpost.controller.js"></script>
+
 
 </body>
 </html>

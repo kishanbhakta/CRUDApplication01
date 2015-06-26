@@ -1,5 +1,8 @@
-<h2> Add Post </h2>
-<form ng-submit="userPost(post)"></form>
-<input type="text" ng-model="post.title" placeholder="Insert Post Title here...">
-<input type="text" ng-model="post.posttext" placeholer="Add text for post here...">
-<button>Submit</button>
+<h2> {{post}} </h2>
+<form>
+  <input type="text" ng-model="post.img" placeholder="Insert Image URL here...">
+  <input type="text" ng-model="post.title" placeholder="Insert Post Title here...">
+  <input type="text" ng-model="post.article" placeholer="Add text for post here...">
+  <button ng-click="userPost(post)">Submit</button>
+</form>
+
