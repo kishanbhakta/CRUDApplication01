@@ -11,11 +11,11 @@
 
     $scope.addUsernames = function (user) {
         UserFactory.addUsernames(user);
-       }
+       };
 
-    $scope.loginInfo = function (user) {
-        UserFactory.loginInfo(user);
-      };
+    // $scope.loginInfo = function (user) {
+    //     UserFactory.loginInfo(user);
+    //   };
 
 
 

@@ -1,11 +1,28 @@
-<h1 class="homeTitle">Let's Talk Cigars</h1>
- <ul>
-   <li ng-repeat="post in cigar">
-     <img src="{{post.img}}" alt="">
-     <br>
-     {{ post.title }}
-     <hr>
-     {{ post.article}}
+<div class="large-12 columns" id="postElements">
+  <h1 class="large-12 columns">Let's Talk Cigars</h1>
+   <ul>
+     <li ng-repeat="post in cigar">
+       <img src="{{post.img}}" alt="{{ post.title }}">
+       <br>
+       <h1>{{ post.title }}</h1>
+       <hr>
+       <p>{{ post.article }}</p>
+       <br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-   </li>
- </ul>
+     </li>
+   </ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

@@ -1,11 +1,41 @@
+body {
+  width: 75%;
+  max-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('http://i.ytimg.com/vi/whXwVXtO8Xc/maxresdefault.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+nav{
+  height: 45px;
+}
 #loginContainer {
   float: right;
   display: inline-block;
   // padding: initial;
-  width: 26.33333%;
+  width: 31.33333%;
   input {
     display: inline-block;
     width: 94px;
+  }
+}
+
+#postElements {
+  text-align: center;
+  float: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 6px;
+  color: white;
+  ul {
+    list-style-type: none;
+  }
+  title {
+    font-size: 20px;
+  }
+  p {
+    text-align: initial;
   }
 }
 

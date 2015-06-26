@@ -1,7 +1,33 @@
+body {
+  width: 75%;
+  max-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url("http://i.ytimg.com/vi/whXwVXtO8Xc/maxresdefault.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white; }
+
+nav {
+  height: 45px; }
+
 #loginContainer {
   float: right;
   display: inline-block;
-  width: 26.33333%; }
+  width: 31.33333%; }
   #loginContainer input {
     display: inline-block;
     width: 94px; }
+
+#postElements {
+  text-align: center;
+  float: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 6px;
+  color: white; }
+  #postElements ul {
+    list-style-type: none; }
+  #postElements title {
+    font-size: 20px; }
+  #postElements p {
+    text-align: initial; }

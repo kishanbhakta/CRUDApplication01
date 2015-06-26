@@ -4,7 +4,7 @@
 
   angular.module('Cigars')
 
-  .factory('UserFactory', ['$http', 'PARSE', '$location',
+  .factory('UserFactory', ['$http', 'PARSE', '$location', //$cookies
    function($http, PARSE, $location){
 
     var endpoint = PARSE.URL + "classes/username";
@@ -17,16 +17,22 @@
       });
     }
 
-    var loginInfo = function (userInfo) {
-      return $http.get(endpoint, userInfo, PARSE.CONFIG). success( function() {
-        console.log(userInfo);
-        $location.path('/');
-      });
-    };
+
+    // Retrieving a cookie
+    // var userCookie = $cookies.get('id');
+    // Setting a cookie
+    // $cookies.put('id', 'username.id');
+
+    // var loginInfo = function (userInfo) {
+    //   return $http.get(endpoint, userInfo, PARSE.CONFIG). success( function() {
+    //     console.log(userInfo);
+    //     $location.path('/');
+    //   });
+    // };
 
     return {
       addUsernames   :   addUsernames
-      loginInfo      :   loginInfo
+      // loginInfo      :   loginInfo
     }
 
 
